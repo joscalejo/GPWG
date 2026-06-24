@@ -1,0 +1,382 @@
+{
+  "metadata": {
+    "perfil": "Juan Carlos Pérez García",
+    "timestamp": "2026-06-24T15:41:32",
+    "elapsed_seconds": 0.02,
+    "gemini_usado": false
+  },
+  "estadisticas": {
+    "total": 610,
+    "avg_length": 10.8,
+    "min_length": 6,
+    "max_length": 30,
+    "high_priority_pct": 47.9,
+    "medium_priority_pct": 38.0,
+    "low_priority_pct": 14.1,
+    "avg_score": 6.92
+  },
+  "tokens_por_tipo": {
+    "nombre": [
+      {
+        "valor": "Juan",
+        "score": 9,
+        "fuente": "local"
+      },
+      {
+        "valor": "Perez",
+        "score": 9,
+        "fuente": "local"
+      },
+      {
+        "valor": "Pérez",
+        "score": 9,
+        "fuente": "local"
+      },
+      {
+        "valor": "Carlos",
+        "score": 9,
+        "fuente": "local"
+      }
+    ],
+    "apellido": [
+      {
+        "valor": "García",
+        "score": 7,
+        "fuente": "local"
+      },
+      {
+        "valor": "Garcia",
+        "score": 7,
+        "fuente": "local"
+      }
+    ],
+    "nombre_completo": [
+      {
+        "valor": "Juan Carlos Pérez García",
+        "score": 8,
+        "fuente": "local"
+      },
+      {
+        "valor": "Juan Carlos Perez Garcia",
+        "score": 8,
+        "fuente": "local"
+      }
+    ],
+    "apodo": [
+      {
+        "valor": "Carlitos",
+        "score": 9,
+        "fuente": "local"
+      },
+      {
+        "valor": "Juanca",
+        "score": 9,
+        "fuente": "local"
+      },
+      {
+        "valor": "JC",
+        "score": 9,
+        "fuente": "local"
+      }
+    ],
+    "fecha": [
+      {
+        "valor": "19870512",
+        "score": 8,
+        "fuente": "local"
+      },
+      {
+        "valor": "12051987",
+        "score": 8,
+        "fuente": "local"
+      },
+      {
+        "valor": "05121987",
+        "score": 8,
+        "fuente": "local"
+      },
+      {
+        "valor": "120587",
+        "score": 8,
+        "fuente": "local"
+      },
+      {
+        "valor": "870512",
+        "score": 8,
+        "fuente": "local"
+      },
+      {
+        "valor": "051287",
+        "score": 8,
+        "fuente": "local"
+      },
+      {
+        "valor": "1987",
+        "score": 8,
+        "fuente": "local"
+      },
+      {
+        "valor": "1205",
+        "score": 8,
+        "fuente": "local"
+      },
+      {
+        "valor": "0512",
+        "score": 8,
+        "fuente": "local"
+      },
+      {
+        "valor": "12",
+        "score": 8,
+        "fuente": "local"
+      },
+      {
+        "valor": "05",
+        "score": 8,
+        "fuente": "local"
+      },
+      {
+        "valor": "87",
+        "score": 8,
+        "fuente": "local"
+      },
+      {
+        "valor": "12-05-1987",
+        "score": 8,
+        "fuente": "local"
+      },
+      {
+        "valor": "1987-05-12",
+        "score": 8,
+        "fuente": "local"
+      },
+      {
+        "valor": "12/05/1987",
+        "score": 8,
+        "fuente": "local"
+      },
+      {
+        "valor": "12.05.1987",
+        "score": 8,
+        "fuente": "local"
+      }
+    ],
+    "mascota": [
+      {
+        "valor": "Max",
+        "score": 8,
+        "fuente": "local"
+      },
+      {
+        "valor": "Luna",
+        "score": 8,
+        "fuente": "local"
+      },
+      {
+        "valor": "Toby",
+        "score": 8,
+        "fuente": "local"
+      }
+    ],
+    "familiar": [
+      {
+        "valor": "pareja",
+        "score": 6,
+        "fuente": "local"
+      },
+      {
+        "valor": "hijos",
+        "score": 6,
+        "fuente": "local"
+      },
+      {
+        "valor": "madre",
+        "score": 6,
+        "fuente": "local"
+      },
+      {
+        "valor": "padre",
+        "score": 6,
+        "fuente": "local"
+      },
+      {
+        "valor": "hermanos",
+        "score": 6,
+        "fuente": "local"
+      }
+    ],
+    "ciudad": [
+      {
+        "valor": "Guadalajara",
+        "score": 5,
+        "fuente": "local"
+      },
+      {
+        "valor": "México",
+        "score": 6,
+        "fuente": "local"
+      },
+      {
+        "valor": "Ciudad de Mexico",
+        "score": 6,
+        "fuente": "local"
+      },
+      {
+        "valor": "Ciudad de México",
+        "score": 6,
+        "fuente": "local"
+      },
+      {
+        "valor": "de",
+        "score": 6,
+        "fuente": "local"
+      },
+      {
+        "valor": "Ciudad",
+        "score": 6,
+        "fuente": "local"
+      },
+      {
+        "valor": "Mexico",
+        "score": 6,
+        "fuente": "local"
+      }
+    ],
+    "equipo": [
+      {
+        "valor": "Chivas",
+        "score": 5,
+        "fuente": "local"
+      },
+      {
+        "valor": "Barcelona",
+        "score": 5,
+        "fuente": "local"
+      }
+    ],
+    "username": [
+      {
+        "valor": "juanca87",
+        "score": 7,
+        "fuente": "local"
+      },
+      {
+        "valor": "jcperez_mx",
+        "score": 7,
+        "fuente": "local"
+      },
+      {
+        "valor": "juanca_gaming",
+        "score": 7,
+        "fuente": "local"
+      },
+      {
+        "valor": "JuanCa#1234",
+        "score": 7,
+        "fuente": "local"
+      }
+    ],
+    "empresa": [
+      {
+        "valor": "TechCorp Mexico",
+        "score": 4,
+        "fuente": "local"
+      },
+      {
+        "valor": "TechCorp",
+        "score": 4,
+        "fuente": "local"
+      },
+      {
+        "valor": "TechCorp México",
+        "score": 4,
+        "fuente": "local"
+      }
+    ],
+    "keyword": [
+      {
+        "valor": "fútbol",
+        "score": 4,
+        "fuente": "local"
+      },
+      {
+        "valor": "futbol",
+        "score": 4,
+        "fuente": "local"
+      },
+      {
+        "valor": "gaming",
+        "score": 4,
+        "fuente": "local"
+      },
+      {
+        "valor": "música",
+        "score": 4,
+        "fuente": "local"
+      },
+      {
+        "valor": "musica rock",
+        "score": 4,
+        "fuente": "local"
+      },
+      {
+        "valor": "música rock",
+        "score": 4,
+        "fuente": "local"
+      },
+      {
+        "valor": "musica",
+        "score": 4,
+        "fuente": "local"
+      },
+      {
+        "valor": "rock",
+        "score": 4,
+        "fuente": "local"
+      },
+      {
+        "valor": "viajes",
+        "score": 4,
+        "fuente": "local"
+      },
+      {
+        "valor": "fotografia",
+        "score": 4,
+        "fuente": "local"
+      },
+      {
+        "valor": "fotografía",
+        "score": 4,
+        "fuente": "local"
+      },
+      {
+        "valor": "Metallica",
+        "score": 4,
+        "fuente": "local"
+      },
+      {
+        "valor": "Dragon Ball",
+        "score": 4,
+        "fuente": "local"
+      },
+      {
+        "valor": "Dragon",
+        "score": 4,
+        "fuente": "local"
+      },
+      {
+        "valor": "Ball",
+        "score": 4,
+        "fuente": "local"
+      },
+      {
+        "valor": "2019",
+        "score": 6,
+        "fuente": "local"
+      }
+    ]
+  },
+  "tokens_total": 67,
+  "gemini_notas": "",
+  "gemini_patrones": []
+}
