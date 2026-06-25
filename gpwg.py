@@ -111,6 +111,12 @@ ejemplos:
         help="Clave de API de Gemini (también: variable de entorno GEMINI_API_KEY)",
     )
     api_group.add_argument(
+        "--model",
+        metavar="MODELO",
+        default="gemini-3.1-flash-lite",
+        help="Modelo de Gemini a utilizar (por defecto: gemini-3.1-flash-lite)",
+    )
+    api_group.add_argument(
         "--no-gemini",
         action="store_true",
         help="Ejecutar sin IA: solo permutaciones locales (más rápido, menos calidad)",
@@ -259,7 +265,7 @@ def main() -> None:
         print(f"   Entidades locales detectadas: {sum(len(v) for v in entities.values())} elementos")
 
     # ── Fase 3: Enrichment con Gemini ─────────────────────────────────────────
-    enrichment = {}
+    enrichment: dict = {}
     gemini_used = False
 
     if not args.no_gemini:
@@ -268,6 +274,7 @@ def main() -> None:
             profile=normalized_profile,
             entities=entities,
             api_key=args.api_key,
+            model_name=args.model,
             use_cache=not args.no_cache,
             verbose=args.verbose,
         )

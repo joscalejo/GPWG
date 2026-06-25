@@ -5,7 +5,7 @@ Aplica filtros de longitud, ordena por score y limita al máximo indicado.
 También maneja la generación de salida en múltiples formatos.
 """
 
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 import statistics
 
 
@@ -115,7 +115,7 @@ def save_wordlist(
     wordlist: List[Dict[str, Any]],
     output_path: str,
     fmt: str = "txt",
-    stats: Dict[str, Any] = None,
+    stats: Optional[Dict[str, Any]] = None,
 ) -> None:
     """
     Guarda la wordlist en el archivo de salida.

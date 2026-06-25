@@ -172,7 +172,7 @@ def extract_entities_from_description(text: str) -> dict:
     if not text:
         return {"years": [], "numbers": [], "keywords": []}
 
-    entities = {
+    entities: dict[str, list[str]] = {
         "years": [],
         "numbers": [],
         "keywords": [],

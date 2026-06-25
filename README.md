@@ -74,6 +74,7 @@ python gpwg.py --profile mi_perfil.json
 |---|---|---|
 | `--profile` / `-p` | requerido | Ruta al archivo JSON del perfil |
 | `--api-key` / `-k` | `$GEMINI_API_KEY` | Clave de API de Gemini |
+| `--model` | `gemini-3.1-flash-lite` | Modelo de Gemini a utilizar |
 | `--output` / `-o` | `wordlist_[nombre].txt` | Archivo de salida |
 | `--format` / `-f` | `txt` | Formato: `txt`, `json`, `hashcat` |
 | `--max` / `-m` | `30000` | Máximo de contraseñas |

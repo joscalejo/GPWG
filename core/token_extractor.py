@@ -9,7 +9,6 @@ from typing import List, Dict, Any
 from core.normalizer import (
     name_variants,
     generate_date_formats,
-    remove_accents,
 )
 
 

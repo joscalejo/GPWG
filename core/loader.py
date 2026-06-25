@@ -77,11 +77,11 @@ def load_profile(path: str) -> dict:
         print(f"        Verifica que el archivo sea JSON valido en: {path}\n")
         sys.exit(1)
     except UnicodeDecodeError:
-        print(f"\n[ERROR] Error de codificacion. Guarda el archivo como UTF-8.\n")
+        print("\n[ERROR] Error de codificacion. Guarda el archivo como UTF-8.\n")
         sys.exit(1)
 
     if not isinstance(profile, dict):
-        print(f"\n[ERROR] El JSON debe ser un objeto ({{...}}), no una lista.\n")
+        print("\n[ERROR] El JSON debe ser un objeto ({...}), no una lista.\n")
         sys.exit(1)
 
     # ── Validar campos requeridos ──────────────────────────────────────────────

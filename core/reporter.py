@@ -7,8 +7,7 @@ con todos los tokens, scores y métricas de la sesión.
 
 import json
 import time
-from pathlib import Path
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 
 
 # ── Banner ─────────────────────────────────────────────────────────────────────
@@ -42,7 +41,7 @@ def print_summary(
     dry_run: bool = False,
     gemini_used: bool = True,
     tokens_count: int = 0,
-    report_path: str = None,
+    report_path: Optional[str] = None,
 ) -> None:
     """
     Imprime el resumen final en consola.
@@ -61,7 +60,7 @@ def print_summary(
     if dry_run:
         print("  [*] MODO DRY-RUN (sin escritura de archivo)")
     else:
-        print(f"  [+] Wordlist generada exitosamente")
+        print("  [+] Wordlist generada exitosamente")
 
     print("═" * 55)
     print(f"  Contraseñas totales : {stats.get('total', 0):>10,}")

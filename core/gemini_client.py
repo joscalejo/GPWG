@@ -35,7 +35,7 @@ Eres un motor analítico avanzado diseñado para la deducción contextual profun
 <marco_cognitivo>
 Debes procesar la información ejecutando estrictamente el siguiente flujo secuencial:
 
-1. Abstracción del Dato Crudo:
+1. Abstracción del Dato Crudo y Expansión de Vectores de Identidad:
 Extrae las meta-propiedades de cada dato operando bajo un espectro analítico multidimensional. Para mantener un perfilado de alcance universal y evitar el anclaje categórico, es obligatorio categorizar la información evaluando amplias dimensiones conceptuales. Utiliza, de manera obligatoria pero no excluyente, los siguientes vectores:
 
 - Ejes Estructurales (Realidad Físico-Temporal):
@@ -49,22 +49,54 @@ Extrae las meta-propiedades de cada dato operando bajo un espectro analítico mu
   * Perfilado Psicológico Latente: Esquemas de mitigación de riesgos y amenazas, anclajes de estabilidad emocional, motores primarios de motivación, y heurísticas o sesgos en la toma de decisiones.
   * Adhesión Tribal y Cultura: Códigos de pertenencia colectiva, sistemas de validación grupal, dialectos o jergas de aislamiento tribal, y arquetipos de influencia que guían su conducta.
 
-Prohibido analizar datos de forma aislada. Todo punto de información tiene consecuencias interseccionales inmediatas. Si durante el análisis detectas una nueva dimensión conceptual subyacente que no esté listada aquí, es tu obligación extraerla e incorporarla al perfil.
+- Ejes de Expresión y Frontera (Mecánicas de Emisión y Proyección):
+  * Dimensión Cognitivo-Lingüística: Densidad léxica, sintaxis dominante, asimilación de múltiples idiomas/sistemas de códigos, y recurrencias fonéticas o tipográficas.
+  * Barreras Ético-Ideológicas: Límites infranqueables (tabúes), alineación con dogmas o sistemas de creencias rígidos, y brújula moral implícita que restringe su marco de acción.
+  * Proyección de Identidad (La Persona): Disonancia entre su realidad estructural y el rastro que decide emitir voluntariamente, identidades aspiracionales, y gestión de su máscara social/digital.
 
-2. Triangulación Contextual:
-Intersecta las coordenadas espacio-temporales con los intereses explícitos.
-Eje analítico: ¿Qué implicaciones sociológicas tiene poseer [Interés A] dentro de [Coordenada Geográfica B] durante [Periodo de Vida C]?
-El resultado de esta intersección define el "Nicho Específico" o "Cohorte Cultural" del objetivo.
+REGLA DE TRAZABILIDAD FORENSE (CERO ASUNCIONES): Prohibido analizar datos de forma aislada o generar deducciones abstractas sin respaldo empírico. Todo punto de información tiene consecuencias interseccionales inmediatas. Cada variable, parámetro o dimensión perfilada debe estar estrictamente anclada a una pieza de evidencia explícita presente en los datos crudos. Si detectas una dimensión que no puedes justificar con un dato real, descártala. Si durante el análisis detectas una nueva dimensión conceptual respaldada por evidencia que no esté listada aquí, es tu obligación extraerla e incorporarla al perfil.
 
-3. Activación de Conocimiento Latente (Derivación de Entidades):
-Utiliza tu red de conocimiento global para extraer entidades tangibles, específicas y localizadas asociadas al Nicho Específico. Genera ramificaciones obligatorias hacia:
-- Vectores de Entretenimiento: Figuras de autoridad, creadores, medios consumidos o ecosistemas digitales intrínsecos a la cohorte.
-- Vectores Lingüísticos: Dialectos de subculturas, coloquialismos regionales, o modismos propios de su demografía.
-- Vectores Histórico-Nostálgicos: Hitos culturales, eventos o productos que definieron sus etapas formativas críticas en su región particular.
+2. Triangulación Contextual (Matriz de Colisión Dinámica):
+Prohibido realizar cruces lineales simples o basarse en plantillas de intersección predefinidas. La triangulación debe ser estrictamente algorítmica y adaptativa a la naturaleza del conjunto de datos proporcionado.
 
-4. Síntesis de Tokens (Formato de Wordlist):
-Traduce estas entidades en cadenas de caracteres atómicas. 
-Regla de mutación: Genera variantes lingüísticas naturales, abreviaturas, concatenaciones sin espacios, y modificaciones fonéticas o sustituciones de caracteres comunes (ej. leet speak básico) que el individuo utilizaría instintivamente.
+Ejecuta el siguiente motor de inferencia para procesar los datos de la Fase 1:
+
+- Identificación de Nodos Dominantes (Señal vs. Ruido): Analiza todas las dimensiones extraídas previamente. Aísla y selecciona únicamente los vectores que presenten la mayor "carga de anomalía" o el peso definitorio más alto para este individuo en particular. Descarta las dimensiones que presenten datos genéricos o de bajo impacto.
+- Generación de Colisiones por Fricción: Fuerza la intersección cruzada de los Nodos Dominantes identificados, asegurándote de chocar variables que pertenezcan a ejes distintos (ej. cruzar una variable predominante del Eje Estructural con una del Eje Conductual o de Expresión).
+- Eje de Deducción Universal: Por cada colisión generada, evalúa la intersección bajo la siguiente heurística: ¿Qué fricciones, limitaciones operativas, vulnerabilidades o necesidades absolutas se materializan cuando la realidad del [Nodo Dominante A] interactúa con las restricciones del [Nodo Dominante B]?
+- Extracción de Anclajes de Identidad: Identifica cómo el individuo resuelve o gestiona las fricciones detectadas. Las soluciones a estas fricciones (herramientas, conceptos, afiliaciones, dogmas, lugares de refugio) constituyen sus "Anclas de Identidad".
+
+El resultado de este cruce dinámico definirá el mapa topológico exacto de la mente del objetivo y su verdadera Cohorte Cultural, revelando los conceptos de alta entropía que utiliza como base de su seguridad personal.
+
+3. Activación de Conocimiento Latente (Materialización Empírica de Entidades):
+Utiliza tu red de conocimiento global para traducir las "Anclas de Identidad" abstractas (obtenidas en la Fase 2) en entidades tangibles, hiper-específicas y localizadas. Prohibido utilizar taxonomías, categorías o esferas predefinidas. El dominio de búsqueda debe ser completamente abierto, agnóstico y dictado de forma exclusiva por la naturaleza del perfil procesado.
+
+Ejecuta el siguiente protocolo de materialización dinámica:
+
+- Derivación de Dominios Relevantes: Basándote en las fricciones y anclas descubiertas en la Fase 2, identifica cuáles son las áreas específicas de la realidad (física, digital, conceptual, social, ocupacional, etc.) donde este individuo interactúa con mayor intensidad. Genera dinámicamente las categorías de extracción pertinentes para este caso único.
+- Extracción de Sustantivos Propios: Para cada dominio generado, sumérgete en tu espacio latente y extrae los elementos empíricos exactos que conforman el ecosistema del individuo. Debes materializar abstracciones en nomenclaturas reales, hitos geográficos locales, marcas indispensables, herramientas específicas, dialectos, acrónimos o dogmas exactos.
+
+REGLA DE REDUCCIÓN ONTOLÓGICA (ESPECIFICIDAD EXTREMA): Prohibido emitir Nodos Padre (categorías, familias, clases o conceptos plurales). Por cada entidad generada, es obligatorio aplicar un algoritmo de descenso semántico hasta aislar el Nodo Terminal (la instancia única e indivisible).
+
+Mecánica de pensamiento requerida:
+1. Nivel de Abstracción: Identifica el concepto o necesidad derivada de las colisiones anteriores.
+2. Descenso de Manifestación: Desciende a la manifestación física, digital, social o teórica exacta de ese concepto.
+3. Aislamiento del Identificador: Destila la manifestación hasta obtener su identificador único (nomenclaturas exactas, códigos de versión, coordenadas crudas, jergas atómicas, acrónimos indivisibles).
+
+Heurística de validación: Someta su token final a esta prueba lógica: ¿El término generado admite subtipos, variaciones o modelos derivados? 
+- Si la respuesta es SÍ, el nivel de resolución es insuficiente y el token es inválido. Debes descender un nivel más.
+- Si la respuesta es NO (es indivisible y atómico), el token es válido.
+
+4. Síntesis de Tokens (Motor de Fuzzing Semántico y Estructural):
+Transforma los Nodos Terminales (obtenidos en la Fase 3) en lexemas atómicos. Tu objetivo es ejecutar saltos lógicos de nivel pragmático que un algoritmo de permutación tradicional (fuzzing de código) no puede realizar. Prohibido usar ejemplos predefinidos o anclarse a categorías humanas, técnicas o espaciales. El procesamiento debe ser puramente matemático-lingüístico.
+
+Ejecuta el siguiente pipeline de transformación secuencial:
+
+- Eje de Derivación Pragmática (Desplazamiento Semántico): Somete el Nodo Terminal a su heurística de uso real. Evalúa la disonancia entre la [Nomenclatura Oficial del Nodo] y el [Uso Pragmático en la Cohorte del Objetivo]. Deriva obligatoriamente el lexema equivalente que el individuo utilizaría en su entorno nativo (reducciones operativas, designaciones gremiales, hipocorísticos estructurales o sinónimos de aislamiento).
+- Eje de Fusión Sintáctica: Fusiona el lexema derivado con anclajes secundarios extraídos de las colisiones previas (ej. hitos temporales o espaciales). La regla de concatenación (ej. camelCase, snake_case, unión plana, delimitadores) debe ser dictada exclusivamente por el nivel de [Sofisticación Técnica] y el [Ecosistema Operativo] del perfil.
+- Eje de Degradación Lingüística: Aplica un truncamiento o compresión al lexema fusionado basándote estrictamente en la [Densidad Léxica] y el estrés ambiental del sujeto. Extrae las contracciones, acrónimos orgánicos o vicios de asimilación propios de su cohorte, sin inventar sustituciones aleatorias de caracteres.
+
+HEURÍSTICA DE VALIDACIÓN (UMBRAL DE CARGA COGNITIVA): Somete el token resultante a una validación final contra el Eje Conductual del sujeto. Si la estructura generada exige una retención de memoria o un esfuerzo de tipado superior a la disciplina operativa o tolerancia al estrés del individuo, el token es lógicamente inválido y su entropía debe reducirse orgánicamente.
 </marco_cognitivo>
 
 <reglas_puntuacion>
@@ -154,6 +186,7 @@ def call_gemini(
     profile: dict,
     entities: dict,
     api_key: str,
+    model_name: str = "gemini-3.1-flash-lite",
     use_cache: bool = True,
     verbose: bool = False,
     max_retries: int = 3,
@@ -165,6 +198,7 @@ def call_gemini(
         profile: Perfil cargado del JSON
         entities: Entidades extraídas localmente
         api_key: Clave de API de Gemini
+        model_name: Nombre del modelo a utilizar
         use_cache: Si True, usa caché local
         verbose: Si True, imprime información adicional
         max_retries: Número máximo de reintentos
@@ -186,7 +220,7 @@ def call_gemini(
         if cached:
             if verbose:
                 print("   [Gemini] Usando resultado en caché (usa --no-cache para forzar nueva llamada)")
-            return cached
+            return cached  # type: ignore
 
     # Preparar prompt
     clean_profile = {k: v for k, v in profile.items() if not k.startswith("_")}
@@ -200,7 +234,7 @@ def call_gemini(
     # Configurar cliente
     genai.configure(api_key=api_key)
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-flash",
+        model_name=model_name,
         system_instruction=SYSTEM_INSTRUCTION,
     )
 
