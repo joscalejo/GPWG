@@ -139,8 +139,6 @@ def save_audit_report(
         "estadisticas": stats,
         "tokens_por_tipo": tokens_by_type,
         "tokens_total": len(tokens),
-        "gemini_notas": enrichment.get("notas", ""),
-        "gemini_patrones": enrichment.get("patrones_detectados", []),
     }
 
     with open(report_path, "w", encoding="utf-8") as f:

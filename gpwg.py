@@ -278,11 +278,14 @@ def main() -> None:
             use_cache=not args.no_cache,
             verbose=args.verbose,
         )
-        if enrichment.get("tokens"):
+        total_gemini = sum(len(enrichment.get(tier, [])) for tier in ["alto", "medio", "bajo"])
+        if total_gemini > 0:
             gemini_used = True
-            print(f"   {len(enrichment['tokens'])} tokens recibidos de Gemini")
-            if args.verbose and enrichment.get("notas"):
-                print(f"   Notas: {enrichment['notas']}")
+            print(f"   {total_gemini} tokens recibidos de Gemini")
+            if args.verbose and enrichment.get("analisis_cognitivo"):
+                print("\n   --- Análisis Cognitivo (IA) ---")
+                print(f"   {enrichment['analisis_cognitivo']}")
+                print("   -------------------------------\n")
     else:
         print_phase("Modo sin Gemini (--no-gemini activado)")
 

@@ -113,7 +113,7 @@ def extract_tokens(profile: dict, enrichment: dict) -> List[Dict[str, Any]]:
         intereses = [i.strip() for i in intereses.split(",")]
     for interes in intereses:
         for v in name_variants(str(interes)):
-            add_token(v, "keyword", 4)
+            add_token(v, "keyword", 7)
 
     # ── 11. Palabras clave extra ──────────────────────────────────────────────
     extras = profile.get("palabras_clave_extra", [])
@@ -123,16 +123,20 @@ def extract_tokens(profile: dict, enrichment: dict) -> List[Dict[str, Any]]:
         add_token(str(extra), "keyword", 6)
 
     # ── 12. Tokens de Gemini ──────────────────────────────────────────────────
-    gemini_tokens = enrichment.get("tokens", [])
-    for token_data in gemini_tokens:
-        valor = token_data.get("valor", "")
-        tipo = token_data.get("tipo", "otro")
-        score = token_data.get("score", 5)
-        add_token(valor, tipo, score, fuente="gemini")
-
-    # Apodos sugeridos por Gemini
-    for apodo in enrichment.get("apodos_sugeridos", []):
-        add_token(str(apodo), "apodo", 8, fuente="gemini")
+    tier_scores = {"alto": 9, "medio": 6, "bajo": 3}
+    for tier, score in tier_scores.items():
+        for token_value in enrichment.get(tier, []):
+            val = str(token_value).strip()
+            add_token(val, "gemini", score, fuente="gemini")
+            # Para tokens multi-palabra, generar variante unida (camelCase)
+            # ej. "Dragon Ball" → "DragonBall", "dragonball"
+            if " " in val:
+                parts = val.split()
+                joined = "".join(parts)
+                camel = "".join(p.capitalize() for p in parts)
+                add_token(joined, "gemini", score, fuente="gemini")
+                if camel != joined:
+                    add_token(camel, "gemini", score, fuente="gemini")
 
     return tokens
 

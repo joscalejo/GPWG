@@ -82,10 +82,24 @@ def normalize_profile(profile: dict) -> dict:
 
     # Normalizar familiares
     familiares_raw = profile.get("familiares", [])
-    if isinstance(familiares_raw, str):
-        familiares_raw = [f.strip() for f in familiares_raw.split(",")]
+    familiares_list = []
+    if isinstance(familiares_raw, dict):
+        for val in familiares_raw.values():
+            if isinstance(val, list):
+                for v in val:
+                    if isinstance(v, str) and v.strip():
+                        familiares_list.append(v)
+            elif isinstance(val, str) and val.strip():
+                familiares_list.append(val)
+    elif isinstance(familiares_raw, list):
+        for val in familiares_raw:
+            if isinstance(val, str) and val.strip():
+                familiares_list.append(val)
+    elif isinstance(familiares_raw, str):
+        familiares_list = [f.strip() for f in familiares_raw.split(",") if f.strip()]
+
     normalized["_familiares_variants"] = []
-    for f in familiares_raw:
+    for f in familiares_list:
         normalized["_familiares_variants"].extend(name_variants(f))
 
     return normalized
@@ -163,28 +177,37 @@ def generate_date_formats(fecha: str) -> List[str]:
 
 def extract_entities_from_description(text: str) -> dict:
     """
-    Extrae entidades relevantes de texto libre usando regex.
+    Extrae entidades relevantes de texto libre usando regex y heurísticas.
     Es un pre-procesamiento local antes de enviar a Gemini.
 
     Returns:
-        Dict con listas de: años, números, palabras_clave
+        Dict con listas de: years, numbers, keywords, acronyms, proper_nouns
     """
     if not text:
-        return {"years": [], "numbers": [], "keywords": []}
+        return {
+            "years": [], "numbers": [], "keywords": [],
+            "acronyms": [], "proper_nouns": [],
+        }
 
     entities: dict[str, list[str]] = {
         "years": [],
         "numbers": [],
         "keywords": [],
+        "acronyms": [],
+        "proper_nouns": [],
     }
 
     # Años (1940-2030)
-    years = re.findall(r"\b(19[4-9]\d|20[0-2]\d)\b", text)
+    years = re.findall(r"\b(19[4-9]\d|20[0-3]\d)\b", text)
     entities["years"] = list(set(years))
 
     # Números de 2-6 dígitos (posibles años cortos, días especiales, etc.)
     numbers = re.findall(r"\b\d{2,6}\b", text)
     entities["numbers"] = list(set(numbers))[:20]  # Limitar
+
+    # Acrónimos (2-6 letras mayúsculas, ej. PUCP, TCG, LAN)
+    acronyms = re.findall(r"\b([A-Z]{2,6})\b", text)
+    entities["acronyms"] = list(set(acronyms))
 
     # Palabras en mayúscula que probablemente son nombres propios o lugares
     # (Excluir inicio de oración para reducir falsos positivos)
@@ -199,6 +222,32 @@ def extract_entities_from_description(text: str) -> dict:
             if clean_word and clean_word[0].isupper() and len(clean_word) > 2:
                 keywords.append(clean_word)
 
-    entities["keywords"] = list(set(keywords))[:30]
+    # Nombres propios multi-palabra (ej. "Alianza Lima", "Dragon Ball")
+    proper_nouns = re.findall(
+        r"\b([A-Z][a-záéíóúñ]+(?:\s+[A-Z][a-záéíóúñ]+)+)\b", text
+    )
+    entities["proper_nouns"] = list(set(proper_nouns))[:20]
+
+    # Extraer palabras clave significativas incluso en minúsculas
+    # (nombres de juegos, plataformas, tecnologías comunes)
+    known_patterns = re.findall(
+        r"\b(valorant|dota|fortnite|minecraft|league|legends|overwatch|"
+        r"csgo|counter|strike|apex|genshin|pokemon|yugioh|digimon|"
+        r"naruto|dragon\s*ball|one\s*piece|bleach|jujutsu|"
+        r"steam|discord|twitch|tiktok|instagram|youtube|reddit|"
+        r"bitcoin|ethereum|crypto|blockchain|binance|"
+        r"arduino|raspberry|python|javascript|java|react|"
+        r"anime|manga|otaku|cosplay|k-?pop|j-?pop|"
+        r"mecatronica|mecatrónica|electronica|electrónica|"
+        r"ingenieria|ingeniería|sistemas|software|"
+        r"futbol|fútbol|basket|voley|"
+        r"apuestas|casino|poker|ruleta|"
+        r"criptomonedas?|trading|nft)\b",
+        text, re.IGNORECASE
+    )
+    known_unique = list(set(p.strip().lower() for p in known_patterns))
+
+    entities["keywords"] = list(set(keywords + known_unique))[:50]
 
     return entities
+
